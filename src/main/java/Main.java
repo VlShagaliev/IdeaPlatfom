@@ -20,11 +20,12 @@ public class Main {
         int count_flight = 0;
 
         for (int i = 0; i < ticketList.getTickets().size(); i++) {
-            if (ticketList.getTickets().get(i).getOrigin_name().equals("Владивосток") && ticketList.getTickets().get(i).getDestination_name().equals("Тель-Авив")) {
-                String departure_date = ticketList.getTickets().get(i).getDeparture_date();
-                String departure_time = ticketList.getTickets().get(i).getDeparture_time();
-                String arrival_date = ticketList.getTickets().get(i).getArrival_date();
-                String arrival_time = ticketList.getTickets().get(i).getArrival_time();
+            Tickets tickets = ticketList.getTickets().get(i);
+            if (tickets.getOrigin_name().equals("Владивосток") && tickets.getDestination_name().equals("Тель-Авив")) {
+                String departure_date = tickets.getDeparture_date();
+                String departure_time = tickets.getDeparture_time();
+                String arrival_date = tickets.getArrival_date();
+                String arrival_time = tickets.getArrival_time();
 
                 DateFormat df1 = new SimpleDateFormat("dd.MM.yy HH:mm");
                 Date dateFrom = df1.parse(departure_date + " " + departure_time);
