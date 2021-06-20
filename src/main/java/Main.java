@@ -11,9 +11,8 @@ public class Main {
     public static void main(String[] args) throws IOException, ParseException {
         final int time_zone_difference = 7 * 60 * 60 * 1000; //разница в часовых посяах
         Gson gson = new Gson();
-        String location = Main.class.getProtectionDomain().getCodeSource().getLocation().toString().substring(5,Main.class.getProtectionDomain().getCodeSource().getLocation().toString().length()-15);
-        BufferedReader inputFile = new BufferedReader(new FileReader(location + "tickets.json"));
-        FileWriter outputFile = new FileWriter(location + "output.txt");
+        BufferedReader inputFile = new BufferedReader(new FileReader("tickets.json"));
+        FileWriter outputFile = new FileWriter("output.txt");
         TicketList ticketList = gson.fromJson(inputFile, TicketList.class);
         ArrayList<Integer> percentile = new ArrayList<Integer>();
         int average_time_fly = 0;
