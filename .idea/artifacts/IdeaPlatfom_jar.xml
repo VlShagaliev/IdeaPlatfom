@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IdeaPlatfom:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IdeaPlatfom_jar</output-path>
+    <root id="archive" name="IdeaPlatfom.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="IdeaPlatfom" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/TicketList.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/Tickets.java" />
+    </root>
+  </artifact>
+</component>
